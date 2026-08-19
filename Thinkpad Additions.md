@@ -4,8 +4,7 @@
 
 - For QSV Intel recording in OBS Studio you have to install Intel-Media-SDK from the AUR
 
-## QEMU / KVM git config --global user.email "you@example.com"
-  git config --global user.name "Your Name"
+## QEMU / KVM Install
 
 Run the following commands:
 
@@ -44,6 +43,6 @@ sudo ufw allow 7011/udp
 sudo ufw allow 7000:7001/tcp
 
 #Still didn't connect until I turned off UFW
-systemctl dtop ufw
+systemctl stop ufw
 
 
