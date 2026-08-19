@@ -45,4 +45,10 @@ sudo ufw allow 7000:7001/tcp
 #Still didn't connect until I turned off UFW
 systemctl stop ufw
 
-
+# Install tlp and configure for 80% max charge
+ TLP is a widely used power management tool that simplifies setting these values:
+ Install TLP: sudo pacman -S tlpOpen /etc/tlp.conf with a text editor.
+ Uncomment and adjust the parameters for your battery:
+ START_CHARGE_THRESH_BAT0=75
+ STOP_CHARGE_THRESH_BAT0=80
+ Enable and start the service: sudo systemctl enable --now tlp
